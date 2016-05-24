@@ -1,0 +1,29 @@
+GIT REPOSITORY
+What makes a git repository a repository is having a folder by name ".git". Since this directory has '.' at the beginning, OS knows that it should be hidden
+
+INIT command
+On your own computer if you want to make something version controlled, you will begin by running the command "git init". This command will create the ".git" directory making the parent directory a git repository
+
+    git init
+
+When a new repository is initialized no commits will be made. This can be verified by running git log command
+
+STATUS command
+This command will give the status of the changes/adds to your repository since last commit. 
+
+    git status
+
+ADD command
+This command is used to add files to a staging area. This gives you flexibility to choose set of files and commit. After adding files to the staging area, you can commit only those files by running "git commit"
+
+    git add <filename>
+
+You can check whether the file was added or not by running the "git status" command
+
+RESET command
+If you accidentally added something to the staging area and if you wish to remove them, you need to run "git reset" command. 
+
+    git reset
+
+This will remove all the files added to staging area. You can check this by running "git status" command.
+
