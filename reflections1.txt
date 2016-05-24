@@ -1,0 +1,42 @@
+Diff two files on MAC/LINUX: 
+
+    diff -u file1.txt file2.txt
+
+Diff two files on WIN: 
+
+
+    fc file1.txt file2.txt
+
+
+Manual saving a version === Git Commit (Git commit is equivalent to manually saving a file revision)
+
+REPOSITORY definition
+Git repository is a set of files that are in  a version-controlled-directory.
+
+COMMIT definition 
+Git commits all files together in a repository. Repository is a set of files in a version-controlled-directory.
+
+CLONE definition
+Clone is same as downloading. When you clone a repository it means that you have download a directory with all its files localy. This download or cloning will include all the version history of that repository. 
+
+CLONE Syntax
+
+    git clone <url> 
+
+    Ex: git clone https://github.com/udacity/asteroids.git
+
+
+To view the history of changes of your repository use GIT LOG
+
+    git log
+
+CHECKOUT definition
+Checkout is used to restore previous snapshot of the repository using its commit id. 
+
+    git checkout <id>
+
+    Ex: git checkout adlk40u433435mmoi3456jadfssdpoiwuer
+    
+
+
+ 
