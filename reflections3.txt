@@ -1,4 +1,4 @@
-To share and collaborate with others "github" website is used. First an empty repository has to be created by clicking the "+" icon next to username in the github website. When a new repository is created, a URL will be assigned to it. This URL is used to create "remote" on the local machine.
+To share and collaborate with others "github" website and remote repositories in it are used. First an empty repository has to be created by clicking the "+" icon next to username in the github website. When a new repository is created, a URL will be assigned to it. This URL is used to create "remote" on the local machine.
 
 To keep the repositories, local and the remote, PUSH command is used. 
 
