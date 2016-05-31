@@ -1,0 +1,32 @@
+To share and collaborate with others "github" website is used. First an empty repository has to be created by clicking the "+" icon next to username in the github website. When a new repository is created, a URL will be assigned to it. This URL is used to create "remote" on the local machine.
+
+To keep the repositories, local and the remote, PUSH command is used. 
+
+REMOTE REPOSITORY
+It is a repository on the github website. Colloquially, this is referred to as just "remote". First a remote has to be created on local machine to push the branch to github website.
+
+REMOTE command
+This command is used to list the available remotes on your local machine.
+
+     git remote
+
+Also, the same command is used to create remotes. Following is the command to do so: 
+
+     git remote add <remote_name> <url>
+
+     Ex: git remote add origin https://github.com/username/RepoName.git
+
+"git remote add" takes two arguments, the remote name and the remote repository URL. In the above example "origin" is the remote name and "https://github.com...." is the remote repository URL. Usually when only one remote is used and this remote is called as "origin". 
+
+To verify whether correct remote was created, '-v' flag has to be used at the end, which prints out the remote name and the URL it is associated with. 
+
+     git remote -v
+
+PUSH command
+Once a remote has been created, the local repository has to be "push"ed onto the remote repository. This is achieved by using the following command: 
+
+     git push <remote_name> <branch_to_be_pushed>
+     Ex: git push origin master
+
+"git push" takes two arguments. The remote name to which a branch is being pushed and the branch name that we want to push on to the remote repository. In the above example, "master" branch is pushed onto the "origin" remote. 
+
