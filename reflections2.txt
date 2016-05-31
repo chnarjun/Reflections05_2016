@@ -27,3 +27,48 @@ If you accidentally added something to the staging area and if you wish to remov
 
 This will remove all the files added to staging area. You can check this by running "git status" command.
 
+If any changes are to be discarded from the working directory or the staging area, use the command "git reset --hard". 
+
+    git reset --hard
+
+This command will discard any uncommitted changes from working directory or the staging area. Use this command really really carefully.
+
+
+DIFF command (Revisited)
+Often users want to diff versions in the working directory to the versions in the staging area. This can be accomplished by running "git diff" without any arguments
+
+    git diff   (Without any arguments)
+
+Another diff that can be performed is comparing the staging area to the most recent commit that was made. This can be accomplished by running "git diff --staged".
+
+    git dif --staged
+
+Basic usage is to compare different commits using their ID's as learned in the lesson 1. 
+
+    git diff <ID1> <ID2>
+
+BRANCH command
+This is used to create a new branch for your repository. By default GIT will create master branch an often users will want to create multiple experiments on the changes, in these cases git will allow users to create branches and work independently. 
+
+    git branch <branch name>
+
+Using this command without arguments will print all available branches and the current working branch. 
+
+    git branch
+
+
+DETACHED HEAD warning message:
+When you checkout a commit instead of a branch, that will throw a warning saying the head (more recent commit) is detached. To avoid this and  to have all your changes in git log, you need to create a branch. So best way is to create a branch for any commit to be retained. 
+
+    git checkout -b <new_branch_name>
+
+MERGE command
+Often times when working on multiple branches and there will be a need to merge both the branches. The way to do this is using merge command: 
+
+    git merge <branch1> <branch2> 
+    Ex: git merge master coins
+
+LOG command (Revisited)
+To check the log of branches in a graph format use: 
+
+    git log --graph --oneline
